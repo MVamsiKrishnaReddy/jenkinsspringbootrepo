@@ -9,8 +9,14 @@ public class ClientController {
 	public String home() {
 		return "CI/CD Cloud DevOps";
 	}
+	
 	@GetMapping("/demo")
 	public String demo() {
-		return "Hello";
+		return "Jenkins Hello";
+	}
+	
+	@GetMapping("/test")
+	public String test() {
+		return "Deploy Spring Boot Using Jenkins";
 	}
 }
